@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+  --green: hsl(147, 100%, 70%);
+  --violet: hsl(271, 100%, 75%);
+  --blue: hsl(186, 100%, 75%);
+  --yellow: hsl(48, 100%, 71%);
+  --pink: hsl(345, 100%, 75%);
+  --text: hsl(0, 0%, 25%);
+  --sub-text: hsl(0, 0%, 35%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid: repeat(16, 50px) / repeat(24, 50px);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.violet, .blue, .red, .yellow, .green {
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+}
+
+.violet {
+  background-color: var(--violet);
+  transform-origin: top left;
+}
+
+.violet:nth-of-type(1) {
+  grid-area: 1 / 1 / span 1 / span 1;
+  opacity: 0.9;
+}
+
+.violet:nth-of-type(2) {
+  grid-area: 1 / 1 / span 2 / span 2;
+  opacity: 0.5;
+}
+
+.violet:nth-of-type(3) {
+  grid-area: 1 / 1 / span 3 / span 3;
+  opacity: 0.3;
+}
+
+.blue {
+  background-color: var(--blue);
+  transform-origin: center;
+}
+
+.blue:nth-of-type(4) {
+  grid-area: 6 / 6 / span 2 / span 2;
+  opacity: 0.9;
+}
+
+.blue:nth-of-type(5) {
+  grid-area: 5 / 5 / span 4 / span 4;
+  opacity: 0.5;
+}
+
+.blue:nth-of-type(6) {
+  grid-area: 4 / 4 / span 6 / span 6;
+  opacity: 0.3;
+}
+
+.red {
+  background-color: var(--pink);
+  transform-origin: bottom left;
+}
+
+.red:nth-of-type(7) {
+  grid-area: 3 / 10 / span 1 / span 1;
+  opacity: 0.9;
+}
+
+.red:nth-of-type(8) {
+  grid-area: 2 / 10 / span 2 / span 2;
+  opacity: 0.5;
+}
+
+.red:nth-of-type(9) {
+  grid-area: 1 / 10 / span 3 / span 3;
+  opacity: 0.3;
+}
+
+.yellow {
+  background-color: var(--yellow);
+  transform-origin: center;
+}
+
+.yellow:nth-of-type(10) {
+  grid-area: 10 / 14 / span 2 / span 2;
+  opacity: 0.9;
+}
+
+.yellow:nth-of-type(11) {
+  grid-area: 9 / 13 / span 4 / span 4;
+  opacity: 0.5;
+}
+
+.yellow:nth-of-type(12) {
+  grid-area: 8 / 12 / span 6 / span 6;
+  opacity: 0.3;
+}
+
+.green {
+  background-color: var(--green);
+  transform-origin: top right;
+}
+
+.green:nth-of-type(13) {
+  grid-area: 1 / 22 / span 3 / span 3;
+  opacity: 0.9;
+}
+.green:nth-of-type(14) {
+  grid-area: 1 / 20 / span 5 / span 5;
+  opacity: 0.5;
+}
+.green:nth-of-type(15) {
+  grid-area: 1 / 18 / span 7 / span 7;
+  opacity: 0.3;
+}
+
+section {
+  width: 1200px;
+  padding: 550px 150px 150px 150px;
+}
+
+section h2 {
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 97px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+h3 {
+  font-size: 37px;
+  font-weight: 400;
+  color: var(--sub-text);
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--sub-text);
+}
+
