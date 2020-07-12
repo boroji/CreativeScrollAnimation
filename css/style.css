@@ -12,6 +12,12 @@
     box-sizing: border-box;
 }
 
+/* 
+---------------
+(1)- adding color palette and display flex for body
+---------------
+*/
+
 :root {
   --green: hsl(147, 100%, 70%);
   --violet: hsl(271, 100%, 75%);
@@ -27,6 +33,12 @@ body {
   justify-content: center;
 }
 
+/* 
+---------------
+(2)- adding display grid to main
+---------------
+*/
+
 main {
   display: grid;
   grid: repeat(16, 50px) / repeat(24, 50px);
@@ -35,10 +47,22 @@ main {
   z-index: 999;
 }
 
+/* 
+---------------
+(3)- adding transition and trasform
+---------------
+*/
+
 .violet, .blue, .red, .yellow, .green {
   transform: scale(1);
   transition: all 0.2s ease-out;
 }
+
+/* 
+---------------
+(4)- violet grid area and transform origin
+---------------
+*/
 
 .violet {
   background-color: var(--violet);
@@ -60,6 +84,12 @@ main {
   opacity: 0.3;
 }
 
+/* 
+---------------
+(5)- blue grid area and transform origin
+---------------
+*/
+
 .blue {
   background-color: var(--blue);
   transform-origin: center;
@@ -79,6 +109,12 @@ main {
   grid-area: 4 / 4 / span 6 / span 6;
   opacity: 0.3;
 }
+
+/* 
+---------------
+(6)- red grid area and transform origin
+---------------
+*/
 
 .red {
   background-color: var(--pink);
@@ -100,6 +136,12 @@ main {
   opacity: 0.3;
 }
 
+/* 
+---------------
+(7)- yellow grid area and transform origin
+---------------
+*/
+
 .yellow {
   background-color: var(--yellow);
   transform-origin: center;
@@ -120,6 +162,12 @@ main {
   opacity: 0.3;
 }
 
+/* 
+---------------
+(8)- green grid area and transform origin
+---------------
+*/
+
 .green {
   background-color: var(--green);
   transform-origin: top right;
@@ -137,6 +185,12 @@ main {
   grid-area: 1 / 18 / span 7 / span 7;
   opacity: 0.3;
 }
+
+/* 
+---------------
+(9)- fixing section width and adding typography
+---------------
+*/
 
 section {
   width: 1200px;
